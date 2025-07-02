@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <xacro:macro name="diffbot_ros2_control">
-        <ros2_control name="RealRobot" type="system">
+        <!--<ros2_control name="RealRobot" type="system">
             <hardware>
                 <plugin>diffdrive_arduino/DiffDriveArduino</plugin>
                 <param name="left_wheel_name">left_wheel_joint</param>
@@ -29,9 +29,9 @@
                 <state_interface name="velocity"/>
             </joint>
 
-        </ros2_control>
+        </ros2_control>-->
 
-        <!--<ros2_control name="diffbot_hardware_interface" type="system">
+        <ros2_control name="diffbot_hardware_interface" type="system">
             <hardware>
                 <plugin>gz_ros2_control/GazeboSimSystem</plugin>
             </hardware>
@@ -51,7 +51,7 @@
                 <state_interface name="velocity"/>
             </joint>
 
-        </ros2_control>-->
+        </ros2_control>
     </xacro:macro>
 
     <gazebo>
